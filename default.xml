@@ -6,12 +6,14 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-  <remote name="pure"
-           fetch="https://github.com/PureNexusProject/" />
   <remote name="abc"
            fetch="https://github.com/ezio84/" />
   <remote name="substratum"
            fetch="https://github.com/substratum/" />
+  <remote name="abc-kenzo"
+           fetch="https://github.com/ABCrom-Kenzo/" />
+  <remote name="nos"
+           fetch="https://github.com/nitrogen-project/" />
   <default revision="refs/tags/android-7.1.2_r12"
            remote="aosp"
            sync-c="true"
@@ -21,33 +23,33 @@
   <project path="scripts" name="scripts" remote="abc" revision="n2" />
   <project path="scripts/vendor-blobs-extractfromfactory" name="vendor-blobs-extractfromfactory" remote="abc" revision="n2" />
   <project path="scripts/enjarify-prebuiltApkExtraction" name="enjarify-prebuiltApkExtraction" remote="abc" revision="n2" />
-  <!-- PNmod Repo's -->
-  <project path="build" name="abc-n_build" groups="pdk" remote="abc" revision="n2" >
+  
+  <!-- ABCrom trees -->
+  <project path="build" name="abc-n_build" groups="pdk" remote="abc-kenzo" revision="n2" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="manifest" name="abc-n_manifest" remote="abc" revision="n2" />
+  <project path="manifest" name="abc-n_manifest" remote="abc-kenzo" revision="n2" />
   <project path="bootable/recovery" name="abc-n_bootable_recovery" groups="pdk" remote="abc" revision="n2" />
   <project path="external/busybox" name="abc-n_external_busybox" remote="abc" revision="n2" />
   <project path="external/DUtils" name="abc-n_external_DUtils" remote="abc" revision="n2" />
   <project path="frameworks/av" name="abc-n_frameworks_av" groups="pdk" remote="abc" revision="n2" />
-  <project path="frameworks/base" name="abc-n_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
+  <project path="frameworks/base" name="abc-n_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="abc-kenzo" revision="n2" />
   <project path="frameworks/native" name="abc-n_frameworks_native" groups="pdk" remote="abc" revision="n2" />
   <project path="frameworks/opt/telephony" name="abc-n_frameworks_opt_telephony" groups="pdk" remote="abc" revision="n2" />
   <project path="frameworks/rs" name="abc-n_frameworks_rs" groups="pdk" remote="abc" revision="n2" />
   <project path="frameworks/support" name="abc-n_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/AbcSettings" name="abc-n_packages_apps_AbcSettings" remote="abc" revision="n2" />
+  <project path="packages/apps/AbcSettings" name="abc-n_packages_apps_AbcSettings" remote="abc-kenzo" revision="n2" />
   <project path="packages/apps/Bluetooth" name="abc-n_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
   <project path="packages/apps/CellBroadcastReceiver" name="abc-n_packages_apps_CellBroadcastReceiver" groups="pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/Contacts" name="abc-n_packages_apps_Contacts" groups="pdk-fs" remote="abc" revision="n2" />
+  <project path="packages/apps/Contacts" name="abc-n_packages_apps_Contacts" groups="pdk-fs" remote="abc-kenzo" revision="n2" />
   <project path="packages/apps/ContactsCommon" name="abc-n_packages_apps_ContactsCommon" groups="pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/Dialer" name="abc-n_packages_apps_Dialer" groups="pdk-fs" remote="abc" revision="n2" />
+  <project path="packages/apps/Dialer" name="abc-n_packages_apps_Dialer" groups="pdk-fs" remote="abc-kenzo" revision="n2" />
   <project path="packages/apps/DSPlibs" name="abc-n_packages_apps_DSPlibs" remote="abc" revision="n2" />
-  <project path="packages/apps/DUI" name="abc-n_packages_apps_DUI" remote="abc" revision="n2" />
-  <project path="packages/apps/Gallery2" name="abc-n_packages_apps_Gallery2" groups="pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/MusicFX" name="abc-n_packages_apps_MusicFX" groups="pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/PackageInstaller" name="abc-n_packages_apps_PackageInstaller" groups="pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/PhoneCommon" name="abc-n_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
-  <project path="packages/apps/Settings" name="abc-n_packages_apps_Settings" groups="pdk-fs" remote="abc" revision="n2" />
+  <project path="packages/apps/DUI" name="abc-n_packages_apps_DUI" remote="abc-kenzo" revision="n2" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="nos" revision="n2" />
+  <project path="packages/apps/PackageInstaller" name="abc-n_packages_apps_PackageInstaller" groups="pdk-fs" remote="abc-kenzo" revision="n2" />
+  <project path="packages/apps/PhoneCommon" name="abc-n_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="abc-kenzo" revision="n2" />
+  <project path="packages/apps/Settings" name="abc-n_packages_apps_Settings" groups="pdk-fs" remote="abc-kenzo" revision="n2" />
   <project path="packages/apps/SlimRecents" name="abc-n_packages_apps_SlimRecents" remote="abc" revision="n2" />
   <project path="packages/inputmethods/LatinIME" name="abc-n_packages_inputmethods_LatinIME" groups="pdk-fs" remote="abc" revision="n2" />
   <project path="packages/providers/DownloadProvider" name="abc-n_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
@@ -60,15 +62,10 @@
   <project path="system/media" name="abc-n_system_media" groups="pdk" remote="abc" revision="n2" />
   <project path="system/netd" name="abc-n_system_netd" groups="pdk" remote="abc" revision="n2" />
   <project path="system/sepolicy" name="abc-n_system_sepolicy" groups="pdk" remote="abc" revision="n2" />
-  <project path="vendor/nexus" name="abc-n_vendor_nexus" remote="abc" revision="n2" />
+  <project path="vendor/nexus" name="abc-n_vendor_nexus" remote="abc-kenzo" revision="n2" />
 
     <!-- Substratum -->
   <project path="packages/services/ThemeInterfacer" name="interfacer" remote="substratum" revision="n-rootless" />
-
-  <!-- Angler trees -->
-  <project path="device/huawei/angler" name="abc-n_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="abc" revision="n2" />
-  <project path="kernel/huawei/angler" name="abc-n_kernel_huawei_angler" groups="device,angler,broadcom_pdk" remote="abc" revision="n2" />
-  <project path="vendor/huawei" name="abc-n_vendor_huawei" remote="abc" revision="n2" />
 
   <!-- AOSP trees -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -141,7 +138,6 @@
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
@@ -341,6 +337,9 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/exfat" name="android_external_exfat" remote="nos" revision="n2" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="nos" revision="n2" />
+  <project path="external/fuse" name="android_external_fuse" remote="nos" revision="n2" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -389,17 +388,16 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="nos" revision="n2" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="nos" revision="n2-caf" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
-  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="nos" revision="n2-8952" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
-  <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
-  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="nos" revision="n2-8952" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="nos" revision="n2-8952" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="nos" revision="n2-8952" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="nos" revision="n2-8952" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" />
@@ -407,7 +405,6 @@
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
@@ -488,7 +485,7 @@
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="nos" revision="n2" />
   <project path="system/weaved" name="platform/system/weaved" />
   <project path="system/webservd" name="platform/system/webservd" />
   <project path="toolchain/binutils" name="toolchain/binutils" />
@@ -504,5 +501,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
+  
+  <!-- Extra -->
+  <include name="devices/kenzo.xml" />
 </manifest>
