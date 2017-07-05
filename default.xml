@@ -16,8 +16,9 @@
            fetch="https://github.com/ABCrom-Kenzo/" />
   <remote name="nos"
            fetch="https://github.com/nitrogen-project/" />
-  <remote name="ex"
-           fetch="https://github.com/AospExtended/" />
+  <remote  name="ex"
+           fetch="https://github.com/AospExtended"
+           revision="7.x" />
   <remote  name="aosp-jf"
            fetch="https://github.com/AOSP-JF-MM"
            revision="aosp-7.1.2" />
