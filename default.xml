@@ -16,7 +16,7 @@
            fetch="https://github.com/ABCrom-Kenzo/" />
   <remote name="nos"
            fetch="https://github.com/nitrogen-project/" />
-  <remote name="aex"
+  <remote name="ex"
            fetch="https://github.com/AospExtended/" />
   <remote  name="aosp-jf"
            fetch="https://github.com/AOSP-JF-MM"
@@ -65,12 +65,13 @@
   <project path="packages/providers/TelephonyProvider" name="abc-n_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
   <project path="packages/services/Telecomm" name="abc-n_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
   <project path="packages/services/Telephony" name="abc-n_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="abc" revision="n2" />
-  <project path="system/core" name="abc-n_system_core" groups="pdk" remote="abc" revision="n2" />
-  <project path="system/extras" name="abc-n_system_extras" groups="pdk" remote="abc" revision="n2" />
-  <project path="system/media" name="abc-n_system_media" groups="pdk" remote="abc" revision="n2" />
-  <project path="system/netd" name="abc-n_system_netd" groups="pdk" remote="abc" revision="n2" />
-  <project path="system/sepolicy" name="abc-n_system_sepolicy" groups="pdk" remote="abc" revision="n2" />
+  <project path="system/core" name="DirtyUnicorns/android_system_core" groups="pdk" remote="github" revision="n7x-caf" />
+  <project path="system/extras" name="abc-n_system_extras" groups="pdk" remote="abc-kenzo" revision="caf" />
+  <project path="system/media" name="platform_system_media" groups="pdk" remote="ex"  />
+  <project path="system/netd" name="platform_system_netd" groups="pdk" remote="ex"  />
+  <project path="system/sepolicy" name="abc-n_system_sepolicy" groups="pdk" remote="abc-kenzo" revision="n2" />
   <project path="vendor/nexus" name="abc-n_vendor_nexus" remote="abc-kenzo" revision="caf" />
+  <project path="system/qcom" name="lineageos/android_system_qcom" groups="qcom" remote="github" revision="cm-14.1" />
 
     <!-- Substratum -->
   <project path="packages/services/ThemeInterfacer" name="interfacer" remote="substratum" revision="n-rootless" />
@@ -484,7 +485,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" />
+  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="ex" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
