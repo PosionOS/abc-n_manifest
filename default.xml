@@ -70,7 +70,7 @@
   <project path="system/extras" name="abc-n_system_extras" groups="pdk" remote="abc-kenzo" revision="caf" />
   <project path="system/media" name="platform_system_media" groups="pdk" remote="ex"  />
   <project path="system/netd" name="platform_system_netd" groups="pdk" remote="ex"  />
-  <project path="system/sepolicy" name="abc-n_system_sepolicy" groups="pdk" remote="abc-kenzo" revision="n2" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="ex"  />
   <project path="vendor/nexus" name="abc-n_vendor_nexus" remote="abc-kenzo" revision="caf" />
   <project path="system/qcom" name="lineageos/android_system_qcom" groups="qcom" remote="github" revision="cm-14.1" />
 
