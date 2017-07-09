@@ -16,5 +16,5 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="nos" revision="n2"/>
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="nos" revision="n2"/>
   <project path="vendor/qcom/opensource/fm" name="android_vendor_qcom_opensource_fm" remote="nos" revision="n2"/>
-  <project path="vendor/xiaomi/kenzo" name="PureNexusProject-Kenzo/android_vendor_xiaomi_kenzo" remote="github" revision="n2-mr2" />
+  <project path="vendor/xiaomi/kenzo" name="PureNexusProject-Kenzo/android_vendor_xiaomi_kenzo" remote="github" revision="n-mr2" />
 </manifest>
