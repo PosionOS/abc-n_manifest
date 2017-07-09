@@ -28,7 +28,7 @@
   <project path="build" name="abc-n_build" groups="pdk" remote="abc-kenzo" revision="n2" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="manifest" name="abc-n_manifest" remote="abc-kenzo" revision="n2" />
+  <project path="manifest" name="abc-n_manifest" remote="abc-kenzo" revision="test" />
   <project path="bootable/recovery" name="abc-n_bootable_recovery" groups="pdk" remote="abc" revision="n2" />
   <project path="external/busybox" name="abc-n_external_busybox" remote="abc" revision="n2" />
   <project path="external/DUtils" name="abc-n_external_DUtils" remote="abc" revision="n2" />
