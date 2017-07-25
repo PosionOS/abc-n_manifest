@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-   <remote  name="posionos"
-           fetch="https://github.com/"
   <remote  name="github"
            fetch="https://github.com" />
   <remote  name="aosp"
@@ -12,7 +10,7 @@
            fetch="https://github.com/ezio84/" />
   <remote name="substratum"
            fetch="https://github.com/substratum/" />
-  <remote name="posionos"
+  <remote name="PosionOS"
            fetch="https://github.com/PosionOS/" />
   <remote name="nos"
            fetch="https://github.com/nitrogen-project/" />
