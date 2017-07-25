@@ -9,11 +9,11 @@ Repo init command:
 
 Sync source (for future syncs, if you have errors, try "repo sync --force-sync")
 
-	repo sync
+	repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
 
 =====================
 
-This rom uses PureNexus as main source base, plus a lot of commits from it and other main roms.
+This rom uses PureNexus and ABC ROM as main source base, plus a lot of commits from it and other main roms.
 Preparing the main source and making the basic custom stuff is the harder part of the work, so give credits and donation to people who really deserves it. 
 
 
