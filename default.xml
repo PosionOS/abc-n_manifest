@@ -10,8 +10,10 @@
            fetch="https://github.com/ezio84/" />
   <remote name="substratum"
            fetch="https://github.com/substratum/" />
-  <remote name="PosionOS"
+  <remote name="posion-os"
            fetch="https://github.com/PosionOS/" />
+  <remote name="abc-kenzo"
+           fetch="https://github.com/ABCrom-Kenzo/" />
   <remote name="nos"
            fetch="https://github.com/nitrogen-project/" />
   <default revision="refs/tags/android-7.1.2_r24"
