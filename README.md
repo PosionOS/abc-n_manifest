@@ -5,7 +5,7 @@ Tip and tricks:
 
 Repo init command:
 
-	repo init -u https://github.com/Kran124/abc-n_manifest.git -b n2
+	repo init -u https://github.com/PosionOS/posion_manifest.git -b n2
 
 Sync source (for future syncs, if you have errors, try "repo sync --force-sync")
 
